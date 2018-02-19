@@ -1,0 +1,14 @@
+<h1>LongestWord#showResult</h1>
+<p>Your word: <%= params[:userWord] %></p>
+
+<% if @score %>
+  <p>Your score: <%= @score %></p>
+<% else %>
+  <% if @trial.empty? %>
+    <p>Word cannot be empty!</p>
+  <% else %>
+    <p>Sorry, your word doesn't exist</p>
+  <% end %>
+<% end %>
+
+<%= link_to 'play again', 'play' %>

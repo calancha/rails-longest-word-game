@@ -1,0 +1,9 @@
+<h1>LongestWord#play</h1>
+<p>Form the longest word you can with the following letters:</p>
+<p><%= @inputWords.join(',') %></p>
+
+<form action="showResult" method="get">
+  <input type="text" name="userWord" placeholder="Input your word">
+  <input type="hidden" name="inputWords" value="<%= @inputWords %>">
+  <input type="submit">
+</form>
